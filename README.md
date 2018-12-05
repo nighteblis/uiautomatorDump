@@ -5,3 +5,8 @@ No other software need to be installed except two of below.
 
 1. adb installed
 2. your device or emulator support uiautomator.  
+
+原理:
+
+利用uiautomator dump 出来当前页面的所有元素, 保存为一个xml文件. 根据xml解析ui元素后, 获取到坐标,通过adb shell input 命令来进行ui测试.
+
